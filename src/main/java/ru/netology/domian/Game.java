@@ -6,8 +6,6 @@ public class Game {
     private ArrayList<Player> players = new ArrayList<>();
 
 
-
-
     public void register(Player player) {
 
         players.add(player);
@@ -15,7 +13,6 @@ public class Game {
     }
 
     public int round(String playerName1, String playerName2) {
-
 
         int j = 0;
         int i = search(playerName1);

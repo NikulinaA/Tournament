@@ -125,6 +125,7 @@ public class GameTest {
         });
 
     }
+
     @Test
     public void noRegisteredTwo() {
 
@@ -146,7 +147,7 @@ public class GameTest {
 
 
         assertThrows(NotRegisteredException.class, () -> {
-            games.round( "Ира Иванова", "Кукуруза Смехова");
+            games.round("Ира Иванова", "Кукуруза Смехова");
         });
 
     }
