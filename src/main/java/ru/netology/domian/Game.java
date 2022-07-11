@@ -19,24 +19,24 @@ public class Game {
         if (i != -1) {
             int t = search(playerName2);
             if (t != -1) {
-                Player[] p1 = new Player[1];
-                Player[] p2 = new Player[1];
+                Player[] player1 = new Player[1];
+                Player[] player2 = new Player[1];
 
                 for (Player player : players
                 ) {
                     if (player.getId() == i + 1) {
-                        p1[0] = player;
+                        player1[0] = player;
 
                     }
                     if (player.getId() == t + 1) {
-                        p2[0] = player;
+                        player2[0] = player;
                     }
                 }
-                int r1 = p1[0].getStrength();
-                int r2 = p2[0].getStrength();
-                if (r1 > r2) {
+                int result1 = player1[0].getStrength();
+                int result2 = player2[0].getStrength();
+                if (result1 > result2) {
                     j = 1;
-                } else if (r2 > r1) {
+                } else if (result2 > result1) {
                     j = 2;
                 } else {
                     j = 0;
