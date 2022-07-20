@@ -14,7 +14,7 @@ public class Game {
 
     public int round(String playerName1, String playerName2) {
 
-        int j = 0;
+        int j = 0; // переменная принимающая значения 0-ничья, 1-победил игрок 1, 2-победил игрок 2
         int i = search(playerName1);
         if (i != -1) {
             int t = search(playerName2);
